@@ -124,8 +124,7 @@
       fbq("init", "372325253374563");
       fbq("track", "PageView");
 
-
-      fbq('track', 'Contact');
+      fbq("track", "Contact");
     </script>
     <noscript
       ><img
@@ -250,22 +249,29 @@
                 data-out="fadeOut"
               >
                 <!-- start menu item -->
-                <li class="dropdown megamenu-fw">
+                <li>
                   <a href="index.html">Home</a>
                 </li>
-                <!-- <li class="dropdown megamenu-fw">
-                    <a href="what-we-do.html">About Us</a>
-                  </li> -->
-                <li class="dropdown megamenu-fw">
-                  <a href="plans-and-pricing.html">Plans & Pricing</a>
+                <li class="dropdown simple-dropdown">
+                  <a href="plans-and-pricing.html">Business</a>
+                  <i
+                    class="fas fa-angle-down dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-hidden="true"
+                  ></i>
+                  <ul class="dropdown-menu animated">
+                    <li>
+                      <a href="plans-and-pricing.html">Plans & Pricing</a>
+                    </li>
+                    <li>
+                      <a href="marketing.html">Marketing</a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="dropdown megamenu-fw">
-                  <a href="marketing.html">Marketing</a>
+                <li>
+                  <a href="personal-portfolio.html">Personal Portfolio</a>
                 </li>
-                <!-- <li class="dropdown megamenu-fw">
-                    <a href="website-pricing.html">Website Themes</a>
-                  </li> -->
-                <li class="dropdown megamenu-fw">
+                <li>
                   <a href="contactus.html">Contact Us</a>
                 </li>
               </ul>

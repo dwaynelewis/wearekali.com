@@ -321,6 +321,34 @@ $(document).ready(function () {
         }
     });
 
+
+    /* ===================================
+     swiper slider for themes
+     ====================================== */
+     var swiperFull = new Swiper('.swiper-themes', {
+        loop: true,
+        slidesPerView: 1,
+        preventClicks: false,
+        allowTouchMove: true,
+        pagination: {
+            el: '.swiper-full-screen-pagination',
+            clickable: true
+        },
+        autoplay: false,
+        keyboard: {
+            enabled: true
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        on: {
+            resize: function () {
+                swiperFull.update();
+            }
+        }
+    });
+
     var swiperAutoFade = new Swiper('.swiper-auto-fade', {
         allowTouchMove: true,
         loop: true,
@@ -951,6 +979,11 @@ $(document).ready(function () {
             }
 
             if ($('.swiper-presentation').length > 0 && swiperPresentation)
+            {
+                swiperPresentation.update();
+            }
+
+            if ($('.swiper-themes').length > 0 && swiperPresentation)
             {
                 swiperPresentation.update();
             }

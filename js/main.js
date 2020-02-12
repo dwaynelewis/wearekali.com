@@ -331,7 +331,7 @@ $(document).ready(function () {
         preventClicks: false,
         allowTouchMove: true,
         pagination: {
-            el: '.swiper-full-screen-pagination',
+            el: '.swiper-pagination',
             clickable: true
         },
         autoplay: false,

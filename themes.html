@@ -64,12 +64,6 @@
     />
     <!-- bootsnav -->
     <link rel="stylesheet" href="css/bootsnav.css" />
-    <!-- Calendly CSS -->
-    <link
-      href="https://assets.calendly.com/assets/external/widget.css"
-      rel="stylesheet"
-    />
-
     <!-- style -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- responsive css -->
@@ -77,109 +71,6 @@
     <!--[if IE]>
       <script src="js/html5shiv.js"></script>
     <![endif]-->
-    <style>
-      #container-floating {
-        position: fixed;
-        bottom: 25px;
-        left: 20px;
-        z-index: 99;
-      }
-      .btn.floating-cta {
-        opacity: 0;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        background: rgba(0, 0, 0, 0.4);
-        text-transform: unset;
-        backdrop-filter: blur(2px) contrast(0.7);
-        font-size: 11px;
-        font-weight: 500;
-        color: #fff;
-        padding: 0.375rem 0.9rem;
-        transition: opacity 1s;
-      }
-      .btn.floating-cta:hover {
-        color: #fff;
-        background-color: #000;
-      }
-    </style>
-
-    <!-- Facebook Pixel Code -->
-    <script>
-      !(function(f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function() {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "372325253374563");
-      fbq("track", "PageView");
-    </script>
-    <noscript>
-      <img
-        height="1"
-        width="1"
-        style="display:none"
-        src="https://www.facebook.com/tr?id=372325253374563&ev=PageView&noscript=1"
-      />
-    </noscript>
-    <!-- End Facebook Pixel Code -->
-
-    <!-- Global site tag (gtag.js) - Google Ads: 771188212 -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-771188212"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-126384254-1");
-      gtag("config", "AW-771188212");
-    </script>
-
-    <!-- Event snippet for Home page view conversion page -->
-    <script>
-      gtag("event", "conversion", {
-        send_to: "AW-771188212/DQhrCMqPx7IBEPTL3e8C"
-      });
-    </script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-    <!-- Hotjar Tracking Code for https://kalimarketing.com/ -->
-    <script>
-      (function(h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function() {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 1639370, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
   </head>
   <body>
     <!-- start header -->
@@ -192,10 +83,10 @@
               class="col-md-6 text-uppercase alt-font d-flex align-items-center justify-content-center justify-content-md-start"
             >
               <a
-                href="tel:3058774853"
+                href="tel:8883973913"
                 class="text-link-white-2 line-height-normal"
-                title="Call us 305-877-4853"
-                >Call us 305-877-4853</a
+                title="Call us 888-397-3913"
+                >Call us 888-397-3913</a
               >
               <div
                 class="separator-line-verticle-extra-small bg-dark-gray display-inline-block margin-two-half-lr position-relative vertical-align-middle"
@@ -244,7 +135,7 @@
           <div class="col-auto pl-lg-0">
             <a href="index.html" title="Pofo" class="logo"
               ><img
-                src="images/kalilogowhite.png"
+                src="images/kali-logo-white.png"
                 data-rjs="images/kalilogowhite"
                 class="logo-light default"
                 alt="Kali Marketing"/><img
@@ -278,22 +169,32 @@
                 data-out="fadeOut"
               >
                 <!-- start menu item -->
-                <li class="dropdown megamenu-fw">
+                <li>
                   <a href="index.html">Home</a>
                 </li>
-                <!-- <li class="dropdown megamenu-fw">
-                  <a href="what-we-do.html">About Us</a>
-                </li> -->
-                <li class="dropdown megamenu-fw">
-                  <a href="plans-and-pricing.html">Plans & Pricing</a>
+                <li class="dropdown simple-dropdown">
+                  <a href="plans-and-pricing.html">Business</a>
+                  <i
+                    class="fas fa-angle-down dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-hidden="true"
+                  ></i>
+                  <ul class="dropdown-menu animated">
+                    <li>
+                      <a href="plans-and-pricing.html">Plans & Pricing</a>
+                    </li>
+                    <li>
+                      <a href="marketing.html">Marketing</a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="dropdown megamenu-fw">
-                  <a href="marketing.html">Marketing</a>
+                <li>
+                  <a href="personal-portfolio.html">Personal Portfolio</a>
                 </li>
-                <!-- <li class="dropdown megamenu-fw">
-                  <a href="website-pricing.html">Website Themes</a>
-                </li> -->
-                <li class="dropdown megamenu-fw">
+                <li>
+                  <a href="themes.html">Themes</a>
+                </li>
+                <li>
                   <a href="contactus.html">Contact Us</a>
                 </li>
               </ul>
@@ -324,7 +225,7 @@
     <section
       class="wow fadeIn parallax"
       data-stellar-background-ratio="0.5"
-      style="background-image:url('http://placehold.it/1920x1100');"
+      style="background-image:url('./images/themes-bg.jpeg');"
     >
       <div class="opacity-medium bg-extra-dark-gray"></div>
       <div class="container">
@@ -336,12 +237,12 @@
             <h1
               class="text-white-2 alt-font font-weight-600 letter-spacing-minus-1 margin-10px-bottom"
             >
-              Portfolio two columns
+              Our Handpicked Themes
             </h1>
             <!-- end page title -->
             <!-- start sub title -->
             <span class="text-white-2 opacity6 alt-font"
-              >Choose from our wide range of portfolio layouts</span
+              >We pick and customize the best designs for you!</span
             >
             <!-- end sub title -->
           </div>
@@ -351,7 +252,8 @@
     <!-- end page title section -->
     <!-- start portfolio section -->
     <section
-      class="wow fadeIn padding-90px-top md-padding-50px-top sm-padding-30px-top"
+      class="wow fadeIn padding-90px-top bg-light-gray md-padding-50px-top sm-padding-30px-top"
+      style="visibility: visible; animation-name: fadeIn;"
     >
       <div class="container">
         <div class="row">
@@ -371,41 +273,25 @@
               <li class="nav">
                 <a
                   href="javascript:void(0);"
-                  data-filter=".web"
+                  data-filter=".landing"
                   class="light-gray-text-link text-very-small"
-                  >Web</a
+                  >Single Page - Landing</a
                 >
               </li>
               <li class="nav">
                 <a
                   href="javascript:void(0);"
-                  data-filter=".advertising"
+                  data-filter=".personal-portfolio"
                   class="light-gray-text-link text-very-small"
-                  >Advertising</a
+                  >Personal Portfolio</a
                 >
               </li>
               <li class="nav">
                 <a
                   href="javascript:void(0);"
-                  data-filter=".branding"
+                  data-filter=".multi-page"
                   class="light-gray-text-link text-very-small"
-                  >Branding</a
-                >
-              </li>
-              <li class="nav">
-                <a
-                  href="javascript:void(0);"
-                  data-filter=".design"
-                  class="light-gray-text-link text-very-small"
-                  >Design</a
-                >
-              </li>
-              <li class="nav">
-                <a
-                  href="javascript:void(0);"
-                  data-filter=".photography"
-                  class="light-gray-text-link text-very-small"
-                  >Photography</a
+                  >Multi-Page</a
                 >
               </li>
             </ul>
@@ -413,438 +299,321 @@
           </div>
         </div>
       </div>
-      <!-- start filter content -->
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
           <div class="col-12 px-3 p-md-0">
             <div class="filter-content overflow-hidden">
-              <ul class="portfolio-grid work-2col hover-option4 gutter-medium">
-                <li class="grid-sizer"></li>
-                <!-- start portfolio item -->
-                <li class="grid-item web branding design wow fadeInUp">
-                  <a href="single-project-page-01.html">
-                    <figure>
-                      <div class="portfolio-img bg-extra-dark-gray">
-                        <img src="http://placehold.it/800x650" alt="" />
+              <ul
+                class="portfolio-grid work-3col gutter-medium hover-option6 lightbox-portfolio"
+                style="position: relative; height: 1598.62px;"
+              >
+                <li
+                  class="grid-sizer"
+                  style="position: absolute; left: 0%; top: 0px;"
+                ></li>
+                <!-- start portfolio-item item -->
+                <li
+                  class="landing grid-item wow fadeInUp last-paragraph-no-margin"
+                  style="position: absolute; left: 0%; top: 0px; visibility: visible; animation-name: fadeInUp;"
+                >
+                  <figure>
+                    <div
+                      class="portfolio-img bg-medium-gray position-relative text-center overflow-hidden"
+                    >
+                      <img
+                        src="./images/theme-mocks/application.png"
+                        alt=""
+                        data-no-retina=""
+                      />
+                      <div class="portfolio-icon">
+                        <a
+                          href="http://application-theme.wearekali.com/"
+                          target="_blank"
+                          ><i
+                            class="fas fa-link text-extra-dark-gray"
+                            aria-hidden="true"
+                          ></i
+                        ></a>
                       </div>
-                      <figcaption>
-                        <div class="portfolio-hover-main text-center">
-                          <div class="portfolio-hover-box align-middle">
-                            <div
-                              class="portfolio-hover-content position-relative"
+                    </div>
+                    <figcaption class="bg-white">
+                      <div class="portfolio-hover-main text-center">
+                        <div class="portfolio-hover-box align-middle">
+                          <div
+                            class="portfolio-hover-content position-relative"
+                          >
+                            <a
+                              href="http://application-theme.wearekali.com/"
+                              target="_blank"
+                              ><span
+                                class="line-height-normal font-weight-600 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase d-block"
+                                >Application</span
+                              ></a
                             >
-                              <div
-                                class="bg-deep-pink mx-auto separator-line-horrizontal-medium-light3 margin-25px-bottom"
-                              ></div>
-                              <span
-                                class="font-weight-600 letter-spacing-1 alt-font text-white-2 text-uppercase margin-5px-bottom d-block"
-                                >Herbal Beauty Salon</span
-                              >
-                              <p
-                                class="text-medium-gray text-uppercase text-extra-small mb-0"
-                              >
-                                Branding and Identity
-                              </p>
-                            </div>
+                            <p
+                              class="text-medium-gray text-extra-small text-uppercase"
+                            >
+                              Single page - Landing
+                            </p>
                           </div>
                         </div>
-                      </figcaption>
-                    </figure>
-                  </a>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li
+                  class="multi-page grid-item wow fadeInUp last-paragraph-no-margin"
+                  style="position: absolute; left: 0%; top: 0px; visibility: visible; animation-name: fadeInUp;"
+                >
+                  <figure>
+                    <div
+                      class="portfolio-img bg-medium-gray position-relative text-center overflow-hidden"
+                    >
+                      <img
+                        src="./images/theme-mocks/corporate-multipage.png"
+                        alt=""
+                        data-no-retina=""
+                      />
+                      <div class="portfolio-icon">
+                        <a
+                          href="http://corporate-theme.wearekali.com/"
+                          target="_blank"
+                          ><i
+                            class="fas fa-link text-extra-dark-gray"
+                            aria-hidden="true"
+                          ></i
+                        ></a>
+                      </div>
+                    </div>
+                    <figcaption class="bg-white">
+                      <div class="portfolio-hover-main text-center">
+                        <div class="portfolio-hover-box align-middle">
+                          <div
+                            class="portfolio-hover-content position-relative"
+                          >
+                            <a
+                              href="http://corporate-theme.wearekali.com/"
+                              target="_blank"
+                              ><span
+                                class="line-height-normal font-weight-600 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase d-block"
+                                >Real Estate Corporation</span
+                              ></a
+                            >
+                            <p
+                              class="text-medium-gray text-extra-small text-uppercase"
+                            >
+                              Multi-Page
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li
+                  class="multi-page photography grid-item wow fadeInUp last-paragraph-no-margin"
+                  style="position: absolute; left: 0%; top: 0px; visibility: visible; animation-name: fadeInUp;"
+                >
+                  <figure>
+                    <div
+                      class="portfolio-img bg-medium-gray position-relative text-center overflow-hidden"
+                    >
+                      <img
+                        src="./images/theme-mocks/lawyers.png"
+                        alt=""
+                        data-no-retina=""
+                      />
+                      <div class="portfolio-icon">
+                        <a
+                          href="http://lawyers-theme.wearekali.com/"
+                          target="_blank"
+                          ><i
+                            class="fas fa-link text-extra-dark-gray"
+                            aria-hidden="true"
+                          ></i
+                        ></a>
+                      </div>
+                    </div>
+                    <figcaption class="bg-white">
+                      <div class="portfolio-hover-main text-center">
+                        <div class="portfolio-hover-box align-middle">
+                          <div
+                            class="portfolio-hover-content position-relative"
+                          >
+                            <a
+                              href="http://lawyers-theme.wearekali.com/"
+                              target="_blank"
+                              ><span
+                                class="line-height-normal font-weight-600 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase d-block"
+                                >Lawyers</span
+                              ></a
+                            >
+                            <p
+                              class="text-medium-gray text-extra-small text-uppercase"
+                            >
+                              Multi-Page
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
                 </li>
                 <!-- end portfolio item -->
                 <!-- start portfolio item -->
                 <li
-                  class="grid-item web branding design wow fadeInUp"
+                  class="personal-portfolio grid-item wow fadeInUp last-paragraph-no-margin"
                   data-wow-delay="0.2s"
+                  style="position: absolute; left: 33.3288%; top: 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"
                 >
-                  <a href="single-project-page-02.html">
-                    <figure>
-                      <div class="portfolio-img bg-extra-dark-gray">
-                        <img src="http://placehold.it/800x650" alt="" />
+                  <figure>
+                    <div
+                      class="portfolio-img bg-medium-gray position-relative text-center overflow-hidden"
+                    >
+                      <img
+                        src="./images/theme-mocks/dr-theme.png"
+                        alt=""
+                        data-no-retina=""
+                      />
+                      <div class="portfolio-icon">
+                        <a
+                          href="http://doctors-theme.wearekali.com/"
+                          target="_blank"
+                          ><i
+                            class="fas fa-link text-extra-dark-gray"
+                            aria-hidden="true"
+                          ></i
+                        ></a>
                       </div>
-                      <figcaption>
-                        <div class="portfolio-hover-main text-center">
-                          <div class="portfolio-hover-box align-middle">
-                            <div
-                              class="portfolio-hover-content position-relative"
+                    </div>
+                    <figcaption class="bg-white">
+                      <div class="portfolio-hover-main text-center">
+                        <div class="portfolio-hover-box align-middle">
+                          <div
+                            class="portfolio-hover-content position-relative"
+                          >
+                            <a
+                              href="http://doctors-theme.wearekali.com/"
+                              target="_blank"
+                              ><span
+                                class="line-height-normal font-weight-600 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase d-block"
+                                >Doctor / Surgeon</span
+                              ></a
                             >
-                              <div
-                                class="bg-deep-pink mx-auto separator-line-horrizontal-medium-light3 margin-25px-bottom"
-                              ></div>
-                              <span
-                                class="font-weight-600 letter-spacing-1 alt-font text-white-2 text-uppercase margin-5px-bottom d-block"
-                                >Tailoring Interior</span
-                              >
-                              <p
-                                class="text-medium-gray text-uppercase text-extra-small mb-0"
-                              >
-                                Branding and Brochure
-                              </p>
-                            </div>
+                            <p
+                              class="text-medium-gray text-extra-small text-uppercase"
+                            >
+                              Personal
+                            </p>
                           </div>
                         </div>
-                      </figcaption>
-                    </figure>
-                  </a>
+                      </div>
+                    </figcaption>
+                  </figure>
                 </li>
                 <!-- end portfolio item -->
                 <!-- start portfolio item -->
                 <li
-                  class="grid-item advertising branding photography wow fadeInUp wow fadeInUp"
+                  class="personal-portfolio photography personal-portfolio landing grid-item wow fadeInUp last-paragraph-no-margin"
                   data-wow-delay="0.4s"
+                  style="position: absolute; left: 66.6576%; top: 0px; visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;"
                 >
-                  <a href="single-project-page-03.html">
-                    <figure>
-                      <div class="portfolio-img bg-extra-dark-gray">
-                        <img src="http://placehold.it/800x650" alt="" />
+                  <figure>
+                    <div
+                      class="portfolio-img bg-medium-gray position-relative text-center overflow-hidden"
+                    >
+                      <img
+                        src="images/theme-mocks/emilio.png"
+                        alt=""
+                        data-no-retina=""
+                      />
+                      <div class="portfolio-icon">
+                        <a
+                          href="http://emilio-theme.wearekali.com/"
+                          target="_blank"
+                          ><i
+                            class="fas fa-link text-extra-dark-gray"
+                            aria-hidden="true"
+                          ></i
+                        ></a>
                       </div>
-                      <figcaption>
-                        <div class="portfolio-hover-main text-center">
-                          <div class="portfolio-hover-box align-middle">
-                            <div
-                              class="portfolio-hover-content position-relative"
+                    </div>
+                    <figcaption class="bg-white">
+                      <div class="portfolio-hover-main text-center">
+                        <div class="portfolio-hover-box align-middle">
+                          <div
+                            class="portfolio-hover-content position-relative"
+                          >
+                            <a
+                              href="http://emilio-theme.wearekali.com/"
+                              target="_blank"
+                              ><span
+                                class="line-height-normal font-weight-600 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase d-block"
+                                >Emilio - Product Designer</span
+                              ></a
                             >
-                              <div
-                                class="bg-deep-pink mx-auto separator-line-horrizontal-medium-light3 margin-25px-bottom"
-                              ></div>
-                              <span
-                                class="font-weight-600 letter-spacing-1 alt-font text-white-2 text-uppercase margin-5px-bottom d-block"
-                                >Pixflow Studio</span
-                              >
-                              <p
-                                class="text-medium-gray text-uppercase text-extra-small mb-0"
-                              >
-                                Branding and Identity
-                              </p>
-                            </div>
+                            <p
+                              class="text-medium-gray text-extra-small text-uppercase"
+                            >
+                              Personal Portfolio
+                            </p>
                           </div>
                         </div>
-                      </figcaption>
-                    </figure>
-                  </a>
+                      </div>
+                    </figcaption>
+                  </figure>
                 </li>
                 <!-- end portfolio item -->
                 <!-- start portfolio item -->
                 <li
-                  class="grid-item web advertising design wow fadeInUp wow fadeInUp"
-                  data-wow-delay="0.6s"
+                  class="landing grid-item wow fadeInUp last-paragraph-no-margin"
+                  style="position: absolute; left: 0%; top: 399.656px; visibility: visible; animation-name: fadeInUp;"
                 >
-                  <a href="single-project-page-04.html">
-                    <figure>
-                      <div class="portfolio-img bg-extra-dark-gray">
-                        <img src="http://placehold.it/800x650" alt="" />
+                  <figure>
+                    <div
+                      class="portfolio-img bg-medium-gray position-relative text-center overflow-hidden"
+                    >
+                      <img
+                        src="images/theme-mocks/real-estate.png"
+                        alt=""
+                        data-no-retina=""
+                      />
+                      <div class="portfolio-icon">
+                        <a
+                          href="http://real-estate-theme.wearekali.com/"
+                          target="_blank"
+                          ><i
+                            class="fas fa-link text-extra-dark-gray"
+                            aria-hidden="true"
+                          ></i
+                        ></a>
                       </div>
-                      <figcaption>
-                        <div class="portfolio-hover-main text-center">
-                          <div class="portfolio-hover-box align-middle">
-                            <div
-                              class="portfolio-hover-content position-relative"
+                    </div>
+                    <figcaption class="bg-white">
+                      <div class="portfolio-hover-main text-center">
+                        <div class="portfolio-hover-box align-middle">
+                          <div
+                            class="portfolio-hover-content position-relative"
+                          >
+                            <a
+                              href="http://real-estate-theme.wearekali.com/"
+                              target="_blank"
+                              ><span
+                                class="line-height-normal font-weight-600 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase d-block"
+                                >Real Estate - Landing</span
+                              ></a
                             >
-                              <div
-                                class="bg-deep-pink mx-auto separator-line-horrizontal-medium-light3 margin-25px-bottom"
-                              ></div>
-                              <span
-                                class="font-weight-600 letter-spacing-1 alt-font text-white-2 text-uppercase margin-5px-bottom d-block"
-                                >Designblast Inc</span
-                              >
-                              <p
-                                class="text-medium-gray text-uppercase text-extra-small mb-0"
-                              >
-                                Web and Photography
-                              </p>
-                            </div>
+                            <p
+                              class="text-medium-gray text-extra-small text-uppercase"
+                            >
+                              Landing
+                            </p>
                           </div>
                         </div>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </li>
-                <!-- end portfolio item -->
-                <!-- start portfolio item -->
-                <li
-                  class="grid-item web branding design wow fadeInUp wow fadeInUp"
-                >
-                  <a href="single-project-page-05.html">
-                    <figure>
-                      <div class="portfolio-img bg-extra-dark-gray">
-                        <img src="http://placehold.it/800x650" alt="" />
                       </div>
-                      <figcaption>
-                        <div class="portfolio-hover-main text-center">
-                          <div class="portfolio-hover-box align-middle">
-                            <div
-                              class="portfolio-hover-content position-relative"
-                            >
-                              <div
-                                class="bg-deep-pink mx-auto separator-line-horrizontal-medium-light3 margin-25px-bottom"
-                              ></div>
-                              <span
-                                class="font-weight-600 letter-spacing-1 alt-font text-white-2 text-uppercase margin-5px-bottom d-block"
-                                >HardDot Stone</span
-                              >
-                              <p
-                                class="text-medium-gray text-uppercase text-extra-small mb-0"
-                              >
-                                Branding and Identity
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </a>
+                    </figcaption>
+                  </figure>
                 </li>
-                <!-- end portfolio item -->
-                <!-- start portfolio item -->
-                <li
-                  class="grid-item web advertising branding design photography wow fadeInUp wow fadeInUp"
-                  data-wow-delay="0.2s"
-                >
-                  <a href="single-project-page-06.html">
-                    <figure>
-                      <div class="portfolio-img bg-extra-dark-gray">
-                        <img src="http://placehold.it/800x650" alt="" />
-                      </div>
-                      <figcaption>
-                        <div class="portfolio-hover-main text-center">
-                          <div class="portfolio-hover-box align-middle">
-                            <div
-                              class="portfolio-hover-content position-relative"
-                            >
-                              <div
-                                class="bg-deep-pink mx-auto separator-line-horrizontal-medium-light3 margin-25px-bottom"
-                              ></div>
-                              <span
-                                class="font-weight-600 letter-spacing-1 alt-font text-white-2 text-uppercase margin-5px-bottom d-block"
-                                >Educamp School</span
-                              >
-                              <p
-                                class="text-medium-gray text-uppercase text-extra-small mb-0"
-                              >
-                                Branding and Identity
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </li>
-                <!-- end portfolio item -->
-                <!-- start portfolio item -->
-                <li
-                  class="grid-item web advertising branding design photography wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <a href="single-project-page-07.html">
-                    <figure>
-                      <div class="portfolio-img bg-extra-dark-gray">
-                        <img src="http://placehold.it/800x650" alt="" />
-                      </div>
-                      <figcaption>
-                        <div class="portfolio-hover-main text-center">
-                          <div class="portfolio-hover-box align-middle">
-                            <div
-                              class="portfolio-hover-content position-relative"
-                            >
-                              <div
-                                class="bg-deep-pink mx-auto separator-line-horrizontal-medium-light3 margin-25px-bottom"
-                              ></div>
-                              <span
-                                class="font-weight-600 letter-spacing-1 alt-font text-white-2 text-uppercase margin-5px-bottom d-block"
-                                >Crop Identity</span
-                              >
-                              <p
-                                class="text-medium-gray text-uppercase text-extra-small mb-0"
-                              >
-                                Branding and Brochure
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </li>
-                <!-- end portfolio item -->
-                <!-- start portfolio item -->
-                <li
-                  class="grid-item web advertising branding design photography wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <a href="single-project-page-08.html">
-                    <figure>
-                      <div class="portfolio-img bg-extra-dark-gray">
-                        <img src="http://placehold.it/800x650" alt="" />
-                      </div>
-                      <figcaption>
-                        <div class="portfolio-hover-main text-center">
-                          <div class="portfolio-hover-box align-middle">
-                            <div
-                              class="portfolio-hover-content position-relative"
-                            >
-                              <div
-                                class="bg-deep-pink mx-auto separator-line-horrizontal-medium-light3 margin-25px-bottom"
-                              ></div>
-                              <span
-                                class="font-weight-600 letter-spacing-1 alt-font text-white-2 text-uppercase margin-5px-bottom d-block"
-                                >Violator Series</span
-                              >
-                              <p
-                                class="text-medium-gray text-uppercase text-extra-small mb-0"
-                              >
-                                Web and Photography
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </li>
-                <!-- end portfolio item -->
-                <!-- start portfolio item -->
-                <li class="grid-item advertising branding design wow fadeInUp">
-                  <a href="single-project-page-01.html">
-                    <figure>
-                      <div class="portfolio-img bg-extra-dark-gray">
-                        <img src="http://placehold.it/800x650" alt="" />
-                      </div>
-                      <figcaption>
-                        <div class="portfolio-hover-main text-center">
-                          <div class="portfolio-hover-box align-middle">
-                            <div
-                              class="portfolio-hover-content position-relative"
-                            >
-                              <div
-                                class="bg-deep-pink mx-auto separator-line-horrizontal-medium-light3 margin-25px-bottom"
-                              ></div>
-                              <span
-                                class="font-weight-600 letter-spacing-1 alt-font text-white-2 text-uppercase margin-5px-bottom d-block"
-                                >Johnny Cash</span
-                              >
-                              <p
-                                class="text-medium-gray text-uppercase text-extra-small mb-0"
-                              >
-                                Web and Photography
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </li>
-                <!-- end portfolio item -->
-                <!-- start portfolio item -->
-                <li
-                  class="grid-item web advertising design photography wow fadeInUp"
-                  data-wow-delay="0.2s"
-                >
-                  <a href="single-project-page-02.html">
-                    <figure>
-                      <div class="portfolio-img bg-extra-dark-gray">
-                        <img src="http://placehold.it/800x650" alt="" />
-                      </div>
-                      <figcaption>
-                        <div class="portfolio-hover-main text-center">
-                          <div class="portfolio-hover-box align-middle">
-                            <div
-                              class="portfolio-hover-content position-relative"
-                            >
-                              <div
-                                class="bg-deep-pink mx-auto separator-line-horrizontal-medium-light3 margin-25px-bottom"
-                              ></div>
-                              <span
-                                class="font-weight-600 letter-spacing-1 alt-font text-white-2 text-uppercase margin-5px-bottom d-block"
-                                >Violator Series</span
-                              >
-                              <p
-                                class="text-medium-gray text-uppercase text-extra-small mb-0"
-                              >
-                                Web and Photography
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </li>
-                <!-- end portfolio item -->
-                <!-- start portfolio item -->
-                <li
-                  class="grid-item web branding photography wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <a href="single-project-page-03.html">
-                    <figure>
-                      <div class="portfolio-img bg-extra-dark-gray">
-                        <img src="http://placehold.it/800x650" alt="" />
-                      </div>
-                      <figcaption>
-                        <div class="portfolio-hover-main text-center">
-                          <div class="portfolio-hover-box align-middle">
-                            <div
-                              class="portfolio-hover-content position-relative"
-                            >
-                              <div
-                                class="bg-deep-pink mx-auto separator-line-horrizontal-medium-light3 margin-25px-bottom"
-                              ></div>
-                              <span
-                                class="font-weight-600 letter-spacing-1 alt-font text-white-2 text-uppercase margin-5px-bottom d-block"
-                                >Zimmermann Buch</span
-                              >
-                              <p
-                                class="text-medium-gray text-uppercase text-extra-small mb-0"
-                              >
-                                Web and Photography
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </li>
-                <!-- end portfolio item -->
-                <!-- start portfolio item -->
-                <li
-                  class="grid-item web advertising branding design photography wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <a href="single-project-page-04.html">
-                    <figure>
-                      <div class="portfolio-img bg-extra-dark-gray">
-                        <img src="http://placehold.it/800x650" alt="" />
-                      </div>
-                      <figcaption>
-                        <div class="portfolio-hover-main text-center">
-                          <div class="portfolio-hover-box align-middle">
-                            <div
-                              class="portfolio-hover-content position-relative"
-                            >
-                              <div
-                                class="bg-deep-pink mx-auto separator-line-horrizontal-medium-light3 margin-25px-bottom"
-                              ></div>
-                              <span
-                                class="font-weight-600 letter-spacing-1 alt-font text-white-2 text-uppercase margin-5px-bottom d-block"
-                                >Stadt Gestalten</span
-                              >
-                              <p
-                                class="text-medium-gray text-uppercase text-extra-small mb-0"
-                              >
-                                Web and Photography
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </li>
-                <!-- end portfolio item -->
               </ul>
             </div>
           </div>
@@ -862,24 +631,22 @@
             class="col-12 col-lg-8 md-margin-30px-bottom text-center text-lg-left wow fadeInDown"
           >
             <span
-              class="alt-font text-extra-large text-extra-dark-gray margin-5px-top sm-no-margin-top d-inline-block width-100"
-              >We would love to hear about start your new project?</span
+              class="alt-font text-extra-large text-extra-dark-gray margin-5px-top md-no-margin-top d-inline-block width-100"
+              >We would love to hear about start of your new project...</span
             >
           </div>
           <div class="col-12 col-lg-4 text-center text-lg-left wow fadeInDown">
             <a
-              href="contact-us-modern.html"
+              href="contactus.html"
               class="btn btn-medium btn-rounded btn-transparent-dark-gray"
               data-wow-delay="0.4s"
-              >Start New Projects
-              <i class="ti-arrow-right" aria-hidden="true"></i
+              >Contact Us <i class="ti-arrow-right" aria-hidden="true"></i
             ></a>
           </div>
         </div>
       </div>
     </section>
     <!-- end call to action section -->
-
     <!-- start footer -->
     <footer
       class="footer-modern-dark bg-charcoal-gray padding-40px-tb sm-padding-20px-top sm-padding-60px-bottom"
@@ -916,8 +683,8 @@
               >
               |
 
-              <a href="tel:3058774853" title="Call us 305-877-4853"
-                >Call us 305-877-4853</a
+              <a href="tel:8883973913" title="Call us 305-877-4853"
+                >Call us 888-397-3913</a
               >
             </div>
             <!-- end contact information -->

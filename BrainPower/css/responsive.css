@@ -4791,7 +4791,18 @@
     /* slider image */
     .parallax {background-attachment: inherit; background-position: center;}
 }
-
+@media only screen and (max-width: 600px) {
+    .captions {
+        display: block;
+      }
+      .background-area.large {
+        /* background-color: #333; */
+        /* background: url(../images/bg/mobile-main.JPG); */
+        height: 800px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+          url(../images/brainpower/BrainPower-bgmain-mobile.jpg);
+      }
+}
 @media screen and (max-width: 55.1875em){
     .cbp-spmenu-horizontal {font-size: 75%;height: 110px;}
     .cbp-spmenu-top {top: -110px;}

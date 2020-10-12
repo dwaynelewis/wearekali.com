@@ -4801,6 +4801,7 @@
         height: 800px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
           url(../images/brainpower/BrainPower-bgmain-mobile.jpg);
+        background-position-x: right;
       }
 }
 @media screen and (max-width: 55.1875em){

@@ -4799,7 +4799,7 @@
         /* background-color: #333; */
         /* background: url(../images/bg/mobile-main.JPG); */
         height: 800px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        background-image: 
           url(../images/brainpower/BrainPower-bgmain-mobile.jpg);
         background-position-x: right;
       }
